@@ -2,7 +2,7 @@
 
 我写了一个简单地脚本，基本原理如下：
 
-```
+```bash
 #!/bin/sh
 
 git pull
@@ -19,7 +19,7 @@ PROJECT='gitbook-howtouse'
 
 sync(){
     echo "sync $PROJECT document to gitbook server"
-    SyncServer="rsync://server_name/rsync"
+    SyncServer="rsync://doc.dq.in/rsync"
     Sync="rsync -avu --port=30873 --delete  --exclude '*.sh' --progress $abspath/build/$PROJECT $SyncServer/PATH/"
     echo $Sync
     eval $Sync
@@ -39,3 +39,5 @@ build(){
 
 build
 ```
+
+这样就可以直接访问下面的地址来在公司的服务器上查看这本[Gitbook使用入门](http://doc.dq.in/gitbook-howtouse/index.html)了
