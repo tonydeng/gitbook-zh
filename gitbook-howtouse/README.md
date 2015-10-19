@@ -22,5 +22,5 @@ GitBook支持输出多种文档格式，如：
 
 ## 本项目地址
 
-- 仓库：https://github.com/tongydeng/gitbook-zh/gitbook-howtouse
+- 仓库：https://github.com/tonydeng/gitbook-zh/tree/master/gitbook-howtouse
 - 在线阅读：http://tonydeng.github.io/gitbook-zh/gitbook-howtouse

@@ -96,3 +96,34 @@ esac
 
 > http://tonydeng.github.io/gitbook-zh/gitbook-howtouse/
 
+## 使用项目的Pages服务
+
+除了上面的直接发布静态文件到Github Pages的方法以外，还可以使用一个单独的项目的Github Pages功能。
+
+### 创建仓库与分支
+
+1. 登陆到Github，创建一个新的仓库，名称我们就命名为```book```，这样我就得到一个```book```仓库。
+2. 克隆仓库到本地： ```git clone git@github.com:/USER_NAME/book.git```
+3. 创建一个新分支： ```git checkout -b gh-pages```，注意，分支名必须为```gh-pages```。
+4. 将分支push到仓库： ```git push -u origin gh-pages```。
+5. 切换到主分支：```git checkout master```。
+
+经过这一步处理，我们已经创建了```gh-pages```分支了，有了这个分支，Github会自动为你分配一个网址。
+
+> http://USERNAME.github.io/book
+
+你可以在项目页面右下角```setting```中看到：
+
+![Github Pages](../imgs/gh-pages-setting.png)
+
+### 同步静态网站代码到分支
+
+下面我们就可以将build好的静态网站代码同步到```gh-pages```分支中去了：
+
+1. 切换出master分支目录。我们需要将```gh-pages```分支内容存放在另外一个目录中
+2. 克隆```gh-pages```分支： ```git clone -b gh-pages git@github.com:USER_NAME/book.git book-end```。这步我们只是克隆了```gh-pages```分支，并存放在一个新的目录```book-end```。
+3. Copy静态网站到```book-end```目录中
+4. Push到仓库
+
+然后，等十来分钟后，你就可以访问到你的在线图书了。以后，只要你每次修改之后，将生成静态网站Copy到```book-end```目录，然后Push一下就OK了。
+
