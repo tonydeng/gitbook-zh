@@ -1,0 +1,59 @@
+{
+    "title": "Gitbook使用入门",
+    "description": "Gitbook使用入门",
+    "keywords": "使用手册,markdown,gitbook,",
+    "introduction": {
+        "path": "README.md",
+        "title": "Gitbook使用入门概述"
+    },
+     "plugins": [
+        // "-mathjax", "ga", "duoshuo"
+    ],
+    "pluginsConfig": {
+        "fontSettings": {
+        "theme": "white",
+        "family": "serif",
+        "size": 2
+        },
+        "ga": {
+            "token": "UA-39088953-8"
+        },
+        "duoshuo": {
+            "short_name": "wiznote",
+            "theme": "default"
+        }
+    },
+    "links": {
+        "home": false,
+        "about": false,
+        "issues": false,
+        "contribute": false,
+        "sidebar": {
+            "Tony Deng": "http://tonydeng.github.io/"
+        },
+        "tail": {
+            "Gitbook使用入门": "http://tonydeng.github.io/gitbook-zh/gitbook-howtouse/",
+        },
+        "gitbook": false,
+        "sharing": {
+            "google" : true,
+            "facebook" : true,
+            "twitter" : true,
+            "weibo" : true,
+            "qq" : true,
+            "qrcode" : true
+        }
+    },
+    "pdf": {
+        "toc": true,
+        "pageNumbers": true,
+        "fontSize": 12,
+        "paperSize": "a4",
+        "margin": {
+            "right": 62,
+            "left": 62,
+            "top": 36,
+            "bottom": 36
+        }
+    }
+}
